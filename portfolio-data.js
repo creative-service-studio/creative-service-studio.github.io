@@ -12920,18 +12920,6 @@ window.PORTFOLIO = {
       "sourceFile": "混ざったやつ/0218_ガラスに映えるシアーネイル.png"
     },
     {
-      "id": "mixed-058a50a0b51e",
-      "title": "飲食店・カフェの参考作品",
-      "industry": "food",
-      "thumbnail": "images/portfolio/mixed-058a50a0b51e-thumb.webp",
-      "image": "images/portfolio/mixed-058a50a0b51e.webp",
-      "width": 2480,
-      "height": 3508,
-      "collection": "normal",
-      "sourceHash": "058a50a0b51e0aac0733ef113105c7c19a288fcf359737e1bb29207d92216c89",
-      "sourceFile": "混ざったやつ/1040_SIMONO.png"
-    },
-    {
       "id": "mixed-997fb05e64ec",
       "title": "介護施設の参考作品",
       "industry": "care",

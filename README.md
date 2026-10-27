@@ -1,4 +1,4 @@
-# SIMONO — 制作サービスサイト
+# 制作サービス — 制作サービスサイト
 
 ホームページ制作・広告デザイン・自動化ツール制作を紹介する1ページのサイトです。
 デザインカンプ（`docs/design-comp.webp`）と引き継ぎ仕様書（`docs/handoff-spec.md`）をもとに、HTML / CSS / JavaScript だけで作っています（ビルド作業は不要）。
@@ -37,8 +37,7 @@ Chrome でページを開き、右クリック →「検証」→ 画面左上�
 
 ## 決定済みの情報
 
-- 屋号：SIMONO
-- お問い合わせ：メール（yujiyuji.s3@gmail.com）。ボタンを押すと件名「制作のご相談」でメールソフトが開きます
+- 表示名：制作サービス
 - 公開先：GitHub Pages（無料・独自ドメインなし）
 
 ## 今後差し替えるところ
@@ -62,6 +61,6 @@ Chrome でページを開き、右クリック →「検証」→ 画面左上�
 1. プルリクエストを main ブランチにマージする
 2. GitHub のリポジトリ画面で「Settings」→ 左メニュー「Pages」を開く
 3. 「Build and deployment」の Source を「Deploy from a branch」、Branch を「main」「/ (root)」にして「Save」
-4. 1〜2分後、同じ画面の上部に公開URL（`https://yujiyujis3-oss.github.io/yuji-01/`）が表示される
+4. 1〜2分後、同じ画面の上部に公開URL（`サイトの公開URL`）が表示される
 
 以降は main ブランチを更新すると、公開中のサイトにも自動で反映されます。

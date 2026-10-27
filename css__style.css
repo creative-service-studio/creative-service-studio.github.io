@@ -1,5 +1,5 @@
 /* =========================================================
-   SIMONO — 制作サービスサイト
+   制作サービス — 制作サービスサイト
    デザイントークンは docs/handoff-spec.md に準拠
    ========================================================= */
 
@@ -895,8 +895,8 @@ button { font: inherit; color: inherit; }
 .service { min-width: 0; }
 .service__head { align-items: flex-start; }
 .hero__eyebrow { line-height: 1.9; }
-@media (min-width: 768px) { .strip__list { grid-template-columns: repeat(4, minmax(0, 1fr)); } .strip__en { font-size: 11px; letter-spacing: .08em; } }
-@media (min-width: 900px) { .service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px 32px; } .service, .service:first-child { padding: 0 24px; border-left: 1px solid var(--line-light); } }
+@media (min-width: 768px) { .strip__list { grid-template-columns: repeat(3, minmax(0, 1fr)); } .strip__en { font-size: 11px; letter-spacing: .08em; } }
+@media (min-width: 900px) { .service-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 32px; } .service, .service:first-child { padding: 0 24px; border-left: 1px solid var(--line-light); } }
 .detail-header { border-bottom: 1px solid var(--line); padding: 24px 0; }
 .detail-header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
 .detail-header a:last-child { font-size: 14px; min-height: 44px; display: inline-flex; align-items: center; }
