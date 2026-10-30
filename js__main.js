@@ -15,6 +15,7 @@
   /* ---------- Mobile menu ---------- */
   var toggle = document.querySelector('.menu-toggle');
   var menu = document.getElementById('mobile-menu');
+  if (toggle && menu) {
   var closeBtn = menu.querySelector('.mobile-menu__close');
   var toggleLabel = toggle.querySelector('.visually-hidden');
   var main = document.getElementById('main');
@@ -102,6 +103,8 @@
   function onDesktopChange(e) { if (e.matches) closeMenu(false); }
   if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', onDesktopChange);
   else if (desktopQuery.addListener) desktopQuery.addListener(onDesktopChange);
+
+  }
 
   /* ---------- ページ内リンク：移動先へフォーカスを移す ---------- */
   function focusSection(target) {

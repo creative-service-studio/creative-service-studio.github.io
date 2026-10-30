@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css__style.css?v=20261030-pop">
+  <link rel="stylesheet" href="css__style.css?v=20261031-clean">
   <link rel="stylesheet" href="portfolio.css?v=20261030-pop">
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -29,30 +29,8 @@
         <a class="btn btn--light btn--sm" href="#services">サービスを見る<span class="btn__icon" aria-hidden="true">↗</span></a>
       </nav>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
-        <span class="menu-toggle__bars" aria-hidden="true"></span>
-        <span class="visually-hidden">メニューを開く</span>
-      </button>
     </div>
   </header>
-
-  <!-- Mobile menu -->
-  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="メニュー" hidden>
-    <div class="mobile-menu__head">
-      <span class="logo">制作サービス</span>
-      <button class="mobile-menu__close" type="button">
-        <span aria-hidden="true">×</span>
-        <span class="visually-hidden">メニューを閉じる</span>
-      </button>
-    </div>
-    <nav aria-label="モバイルメニュー">
-      <ul class="mobile-menu__list">
-        <li><a href="#services"><span class="mono">01</span>サービス</a></li>
-        <li><a href="#flow"><span class="mono">02</span>制作の流れ</a></li>
-      </ul>
-      <a class="btn btn--light btn--block" href="#services">サービスを見る<span class="btn__icon" aria-hidden="true">↗</span></a>
-    </nav>
-  </div>
 
   <main id="main">
     <!-- ============ Hero ============ -->
@@ -60,64 +38,34 @@
       <div class="hero-confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="hero__inner container">
         <div class="hero__content">
-          <p class="hero__eyebrow label intro"><span class="live-dot" aria-hidden="true"></span> CREATIVE SERVICE STUDIO</p>
-          <h1 class="pop-title intro" id="hero-title" style="--delay: 80ms"><span>つくるを、</span><span>もっと<span class="title-spark" aria-hidden="true">✳</span></span><span class="pop-title__white">おもしろく。</span></h1>
+          <h1 class="hero__eyebrow label intro" id="hero-title">WEB DESIGN <span aria-hidden="true">/</span> AD CREATIVE <span aria-hidden="true">/</span> AUTOMATION</h1>
           <p class="hero__lead intro" style="--delay: 200ms">
             ホームページ・広告・自動化ツール。<br>
             見せ方から日々の運用まで、事業に合わせて設計します。
           </p>
-          <div class="hero__actions intro" style="--delay: 280ms">
-            <a class="btn btn--pop" href="#services">サービスを見る<span class="btn__icon" aria-hidden="true">↘</span></a>
-            <a class="hero-work-link" href="ad-design.html">広告デザインを見る<span aria-hidden="true">↗</span></a>
-          </div>
         </div>
         <div class="pop-art" aria-hidden="true">
           <span class="art-star art-star--one">✳</span><span class="art-star art-star--two">✦</span>
-          <span class="art-sticker">ひらめきを、<br>カタチに！</span>
           <div class="pop-tv">
             <div class="tv-antenna"><i></i><i></i></div>
             <div class="tv-case">
               <div class="tv-screen">
                 <div class="tv-bars"><i></i><i></i><i></i><i></i><i></i></div>
-                <span class="tv-caption">GOOD IDEAS START HERE</span>
-                <span class="tv-word">HELLO<span>!</span></span>
                 <div class="tv-face"><span class="tv-eye"></span><span class="tv-eye"></span></div>
                 <span class="tv-smile"></span>
-                <span class="tv-screen-label">WEB / AD / AUTOMATION</span>
               </div>
               <div class="tv-controls"><span class="tv-dial"></span><span class="tv-dial tv-dial--small"></span><span class="tv-speaker"></span><span class="tv-power"></span></div>
             </div>
             <div class="tv-feet"><i></i><i></i></div>
           </div>
           <span class="art-cursor"><svg viewBox="0 0 90 100" focusable="false"><path d="M10 5 78 56 49 61 66 88 50 97 34 69 15 90Z" fill="#fffdf5" stroke="#202135" stroke-width="5" stroke-linejoin="round"/></svg></span>
-          <span class="art-bottom-label">MAKE SOMETHING FUN. ↗</span>
         </div>
       </div>
-      <div class="hero-bottom"><span>ちょっと楽しく、ちゃんと伝わる。</span><a href="#services" aria-label="サービス紹介へスクロール">SCROLL<span aria-hidden="true">↓</span></a></div>
     </section>
-
-    <!-- Service strip -->
-    <div class="strip" aria-label="サービス概要">
-      <ol class="strip__list container">
-        <li>
-          <span class="strip__num mono">01</span>
-          <span class="strip__en label">WEB DESIGN</span>
-          <span class="strip__ja">ブランドを伝える、体験をつくる。</span>
-        </li>
-        <li>
-          <span class="strip__num mono">02</span>
-          <span class="strip__en label">AD CREATIVE</span>
-          <span class="strip__ja">心を動かす、伝わるデザイン。</span>
-        </li>
-        
-        <li><span class="strip__num mono">03</span><span class="strip__en label">AUTOMATION</span><span class="strip__ja">自動化ツールの制作</span></li>
-      </ol>
-    </div>
 
     <!-- ============ Services ============ -->
     <section class="services section section--light" id="services" aria-label="サービス">
       <div class="container">
-        <div class="section-head section-head--pop reveal"><div><p class="section-label label">WHAT WE MAKE</p><h2 class="section-title">アイデアに、<br class="br-mobile">ぴったりのカタチを。</h2></div><span class="section-doodle" aria-hidden="true">✳</span></div>
         <ul class="service-list"><li class="service reveal">
             <div class="service__head">
               <span class="service__num mono" aria-hidden="true">01</span>
@@ -223,7 +171,7 @@
     </div>
   </footer>
 
-  <script src="js__main.js" defer></script>
+  <script src="js__main.js?v=20261031-clean" defer></script>
 </body>
 </html>
 

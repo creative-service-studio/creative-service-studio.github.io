@@ -1202,3 +1202,13 @@ body { color: var(--ink); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
+
+/* Homepage: keep navigation visible without a menu button. */
+@media (max-width: 1023px) {
+  .pop-home .global-nav { display: flex; align-items: center; }
+  .pop-home .global-nav__list { display: flex; align-items: center; gap: 14px; }
+  .pop-home .global-nav__list a { display: inline-flex; align-items: center; min-height: 44px; font-size: 11px; white-space: nowrap; }
+  .pop-home .global-nav > .btn { display: none; }
+  .pop-home .site-header .logo { font-size: 12px; letter-spacing: .1em; }
+}
+.pop-home .hero__eyebrow { flex-wrap: wrap; line-height: 1.8; }
