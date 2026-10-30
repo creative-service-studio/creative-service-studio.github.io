@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>制作サービス｜ホームページ制作・広告デザイン・自動化ツールの制作</title>
   <meta name="description" content="ホームページ・広告・自動化ツール。見せ方から日々の運用まで、事業に合わせて設計します。">
-  <meta name="theme-color" content="#101416">
+  <meta name="theme-color" content="#ffe43b">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="images__character-1254.webp" imagesrcset="images__character-720.webp 720w, images__character-1254.webp 1254w" imagesizes="(max-width: 767px) 100vw, 60vw">
-  <link rel="stylesheet" href="css__style.css">
-  <link rel="stylesheet" href="portfolio.css?v=7a9bf91a2c24">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css__style.css?v=20261030-pop">
+  <link rel="stylesheet" href="portfolio.css?v=20261030-pop">
   <script>document.documentElement.classList.add("js");</script>
 </head>
-<body>
+<body class="pop-home">
   <a class="skip-link" href="#main">本文へスキップ</a>
 
   <!-- ============ Header ============ -->
@@ -58,26 +57,43 @@
   <main id="main">
     <!-- ============ Hero ============ -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__visual intro" style="--delay: 150ms">
-        <img
-          src="images__character-1254.webp"
-          srcset="images__character-720.webp 720w, images__character-1254.webp 1254w"
-          sizes="(max-width: 767px) 100vw, 60vw"
-          width="1254" height="1254"
-          alt="白い外殻と黒いレンズ、露出したケーブルを持つ機械生命体のキャラクター"
-          fetchpriority="high">
-      </div>
-
+      <div class="hero-confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="hero__inner container">
         <div class="hero__content">
-          <h1 class="hero__eyebrow label intro" id="hero-title">WEB DESIGN <span aria-hidden="true">/</span> AD CREATIVE <span aria-hidden="true">/</span> AUTOMATION</h1>
-          <span class="hero__rule intro" aria-hidden="true" style="--delay: 160ms"></span>
+          <p class="hero__eyebrow label intro"><span class="live-dot" aria-hidden="true"></span> CREATIVE SERVICE STUDIO</p>
+          <h1 class="pop-title intro" id="hero-title" style="--delay: 80ms"><span>つくるを、</span><span>もっと<span class="title-spark" aria-hidden="true">✳</span></span><span class="pop-title__white">おもしろく。</span></h1>
           <p class="hero__lead intro" style="--delay: 200ms">
             ホームページ・広告・自動化ツール。<br>
             見せ方から日々の運用まで、事業に合わせて設計します。
           </p>
+          <div class="hero__actions intro" style="--delay: 280ms">
+            <a class="btn btn--pop" href="#services">サービスを見る<span class="btn__icon" aria-hidden="true">↘</span></a>
+            <a class="hero-work-link" href="ad-design.html">広告デザインを見る<span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="pop-art" aria-hidden="true">
+          <span class="art-star art-star--one">✳</span><span class="art-star art-star--two">✦</span>
+          <span class="art-sticker">ひらめきを、<br>カタチに！</span>
+          <div class="pop-tv">
+            <div class="tv-antenna"><i></i><i></i></div>
+            <div class="tv-case">
+              <div class="tv-screen">
+                <div class="tv-bars"><i></i><i></i><i></i><i></i><i></i></div>
+                <span class="tv-caption">GOOD IDEAS START HERE</span>
+                <span class="tv-word">HELLO<span>!</span></span>
+                <div class="tv-face"><span class="tv-eye"></span><span class="tv-eye"></span></div>
+                <span class="tv-smile"></span>
+                <span class="tv-screen-label">WEB / AD / AUTOMATION</span>
+              </div>
+              <div class="tv-controls"><span class="tv-dial"></span><span class="tv-dial tv-dial--small"></span><span class="tv-speaker"></span><span class="tv-power"></span></div>
+            </div>
+            <div class="tv-feet"><i></i><i></i></div>
+          </div>
+          <span class="art-cursor"><svg viewBox="0 0 90 100" focusable="false"><path d="M10 5 78 56 49 61 66 88 50 97 34 69 15 90Z" fill="#fffdf5" stroke="#202135" stroke-width="5" stroke-linejoin="round"/></svg></span>
+          <span class="art-bottom-label">MAKE SOMETHING FUN. ↗</span>
         </div>
       </div>
+      <div class="hero-bottom"><span>ちょっと楽しく、ちゃんと伝わる。</span><a href="#services" aria-label="サービス紹介へスクロール">SCROLL<span aria-hidden="true">↓</span></a></div>
     </section>
 
     <!-- Service strip -->
@@ -101,6 +117,7 @@
     <!-- ============ Services ============ -->
     <section class="services section section--light" id="services" aria-label="サービス">
       <div class="container">
+        <div class="section-head section-head--pop reveal"><div><p class="section-label label">WHAT WE MAKE</p><h2 class="section-title">アイデアに、<br class="br-mobile">ぴったりのカタチを。</h2></div><span class="section-doodle" aria-hidden="true">✳</span></div>
         <ul class="service-list"><li class="service reveal">
             <div class="service__head">
               <span class="service__num mono" aria-hidden="true">01</span>
@@ -209,4 +226,5 @@
   <script src="js__main.js" defer></script>
 </body>
 </html>
+
 

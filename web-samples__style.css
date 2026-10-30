@@ -7,4 +7,20 @@
 .sample-return a:first-child{background:#eef5f3;color:#101619}
 .sample-return a:hover{background:#d4eee7;color:#101619;border-color:#d4eee7}
 .sample-return a:focus-visible{outline:3px solid #79dbc8;outline-offset:3px}
+
+/* Gallery index follows the studio; individual concept designs keep their palettes. */
+.index { background: #fffdf5; color: #202135; }
+.index .nav { border-bottom: 2px solid #202135; background: #fffdf5; }
+.index .hero { max-width: none; padding: 65px 7vw; background: #ffe43b; border-bottom: 2px solid #202135; }
+.index h1 { font-weight: 900; font-size: clamp(2.3rem, 6vw, 5.5rem); letter-spacing: -.05em; }
+.index .hero p { color: #202135; }
+.index .cards { padding-top: 55px; }
+.index .card { border: 2px solid #202135; border-radius: 16px; background: #e4f7fc; color: #202135; box-shadow: 5px 5px 0 #202135; }
+.index .card:nth-child(2) { background: #ffd6e5; }
+.index .card:nth-child(3) { background: #fff4ac; }
+.index .card:hover { border-color: #202135; transform: translateY(-4px); }
+.index .card small { color: #505167; }
+.index .footer { border-color: #202135; }
+.index a:focus-visible { outline: 3px solid #343564; outline-offset: 5px; }
 @media(max-width:480px){.sample-return{gap:.5rem;padding:.65rem 4vw}.sample-return a{padding:.6rem .75rem;font-size:.82rem;flex:1 1 auto}}.sample-bar{flex-wrap:wrap}.sample-bar a{min-height:32px;display:inline-flex;align-items:center}.nav{flex-wrap:wrap}.artist .workrow{gap:1rem;flex-wrap:wrap}h1,h2{overflow-wrap:anywhere}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+

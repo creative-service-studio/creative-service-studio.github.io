@@ -73,3 +73,20 @@ body.artwork-open { overflow: hidden; }
 @media (max-width: 600px) { .collection-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; } }
 
 .portfolio-visual-label { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 16px; }
+
+/* Bright page frames; original artwork colors and proportions are preserved. */
+.portfolio-controls { border-color: #202135; }
+.filter-button { border: 1.5px solid #202135; border-radius: 999px; background: #fffdf5; color: #202135; font-weight: 700; }
+.filter-button:hover { border-color: #202135; background: #ffe43b; }
+.filter-button[aria-pressed="true"] { background: #ffe43b; border-color: #202135; color: #202135; box-shadow: 2px 2px 0 #202135; }
+.portfolio-search input, .industry-select { background: #fff; border: 1.5px solid #202135; border-radius: 10px; }
+.portfolio-card-media, .style-link img { background: #f0f0e9; border: 2px solid #202135; border-radius: 12px; }
+.portfolio-card a:hover .portfolio-card-media, .style-link:hover img { border-color: #202135; box-shadow: 4px 4px 0 #50cef0; }
+.portfolio-style-head { border-color: #202135; }
+.portfolio-style-head h2, .portfolio-home-heading { font-weight: 900; }
+.portfolio-card h4, .style-link h3 { font-weight: 700; }
+.portfolio-empty { background: #e4f7fc; border: 2px solid #202135; border-radius: 12px; }
+.artwork-dialog { background: #fffdf5; color: #202135; border: 2px solid #202135; border-radius: 16px; }
+.artwork-stage { background: #f0f0e9; }
+.artwork-close { border: 2px solid #202135; background: #ffe43b; color: #202135; border-radius: 999px; font-weight: 700; }
+
