@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css__style.css?v=20261031-mascot">
+  <link rel="stylesheet" href="css__style.css?v=20261031-dance">
   <link rel="stylesheet" href="portfolio.css?v=20261030-pop">
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -19,7 +19,7 @@
   <!-- ============ Header ============ -->
   <header class="site-header" id="top">
     <div class="site-header__inner">
-      <a class="logo" href="#top" aria-label="制作サービス トップへ"></a>
+      <span class="header-spacer" aria-hidden="true"></span>
 
       <nav class="global-nav" aria-label="メインメニュー">
         <ul class="global-nav__list">
@@ -41,34 +41,43 @@
 <svg class="pop-mascot" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
   <g stroke="#202135" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M104 120C133 48 242 42 296 70C356 18 479 67 500 140C568 192 543 292 493 328C472 420 357 440 290 408C208 452 91 395 98 315C34 260 43 166 104 120Z" fill="#b8ee75" stroke="none"/>
-    <ellipse cx="303" cy="444" rx="173" ry="17" fill="#202135" opacity=".12" stroke="none"/>
-    <path d="M102 93L111 69L121 93L146 103L121 113L111 138L102 113L78 103Z" fill="#ff75a5"/>
-    <path d="M499 324L507 304L516 324L537 333L516 342L507 364L499 342L478 333Z" fill="#ffffff"/>
+    <ellipse class="mascot-shadow" cx="303" cy="444" rx="173" ry="17" fill="#202135" opacity=".12" stroke="none"/>
+    <path class="mascot-spark" d="M102 93L111 69L121 93L146 103L121 113L111 138L102 113L78 103Z" fill="#ff75a5"/>
+    <path class="mascot-spark mascot-spark--second" d="M499 324L507 304L516 324L537 333L516 342L507 364L499 342L478 333Z" fill="#ffffff"/>
     <circle cx="489" cy="111" r="17" fill="#50cef0"/>
     <circle cx="81" cy="330" r="10" fill="#ac9cfc"/>
     <path d="M526 203l18-10M521 221l23 3M74 202l-20-9" fill="none"/>
+    <g class="mascot-bounce">
+    <g class="mascot-arm-left">
     <path d="M174 290C133 284 117 299 101 319" fill="none" stroke-width="17"/>
     <path d="M112 315C103 296 93 299 94 315C78 299 69 307 83 322C59 315 57 328 80 336C60 339 66 350 86 348C91 366 109 361 116 347C121 335 120 325 112 315Z" fill="#fffdf5"/>
+    </g>
+    <g class="mascot-arm-right">
     <path d="M423 272C469 273 475 239 480 218" fill="none" stroke-width="17"/>
     <path d="M467 222C453 216 457 204 472 205C458 187 469 179 482 195C481 170 495 171 495 195C508 174 520 182 506 202C524 195 532 207 514 220C500 235 483 238 467 222Z" fill="#fffdf5"/>
+    </g>
     <path d="M244 377L234 414M358 377L371 412" fill="none" stroke-width="17"/>
     <path d="M232 405C207 400 191 416 187 434L255 434C267 421 254 409 232 405Z" fill="#ac9cfc"/>
     <path d="M371 404C399 400 416 416 420 434L351 434C340 421 350 409 371 404Z" fill="#50cef0"/>
     <path d="M190 434H254M353 434H417" fill="none" stroke="#fffdf5" stroke-width="7"/>
+    <g class="mascot-antenna">
     <path d="M275 148C264 122 248 115 227 104M323 146C335 124 351 108 377 101" fill="none" stroke-width="8"/>
     <circle cx="224" cy="103" r="13" fill="#ac9cfc"/>
     <circle cx="379" cy="100" r="13" fill="#ff75a5"/>
+    </g>
     <g transform="rotate(-5 300 267)">
       <rect x="158" y="155" width="286" height="228" rx="65" fill="#ff83a4"/>
       <path d="M191 169C216 155 258 157 286 160" fill="none" stroke="#ffd0dd" stroke-width="9"/>
       <rect x="178" y="177" width="204" height="175" rx="48" fill="#50cef0"/>
       <path d="M196 215C202 196 215 191 234 191" fill="none" stroke="#b4f3ff" stroke-width="8"/>
+      <g class="mascot-eyes">
       <ellipse cx="240" cy="253" rx="21" ry="27" fill="#fffdf5"/>
       <ellipse cx="314" cy="253" rx="21" ry="27" fill="#fffdf5"/>
       <ellipse cx="245" cy="258" rx="9" ry="14" fill="#202135" stroke="none"/>
       <ellipse cx="319" cy="258" rx="9" ry="14" fill="#202135" stroke="none"/>
       <circle cx="248" cy="252" r="3.5" fill="#fffdf5" stroke="none"/>
       <circle cx="322" cy="252" r="3.5" fill="#fffdf5" stroke="none"/>
+      </g>
       <ellipse cx="216" cy="287" rx="14" ry="8" fill="#ff8eb7" stroke="none"/>
       <ellipse cx="339" cy="287" rx="14" ry="8" fill="#ff8eb7" stroke="none"/>
       <path d="M256 291Q277 323 301 291Z" fill="#202135"/>
@@ -76,6 +85,7 @@
       <circle cx="412" cy="227" r="14" fill="#ffe43b"/>
       <circle cx="412" cy="269" r="10" fill="#b8ee75"/>
       <path d="M400 309h23M400 320h23" fill="none" stroke-width="4"/>
+    </g>
     </g>
   </g>
 </svg>

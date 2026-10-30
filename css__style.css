@@ -1219,3 +1219,53 @@ body { color: var(--ink); }
 .pop-home .pop-art { width: min(100%, 620px); max-width: 620px; aspect-ratio: 6 / 5; justify-self: center; margin: 0; transform: none; }
 .pop-home .pop-art::before, .pop-home .pop-art::after { content: none; }
 .pop-mascot { display: block; width: 100%; height: auto; overflow: visible; }
+
+/* Remove the upper-left label even if an older HTML copy is loaded. */
+.pop-home .site-header .logo { display: none !important; }
+.header-spacer { flex: 1; }
+.mascot-bounce, .mascot-arm-left, .mascot-arm-right, .mascot-antenna { transform-box: view-box; }
+.mascot-bounce { transform-origin: 300px 410px; }
+.mascot-arm-left { transform-origin: 174px 290px; }
+.mascot-arm-right { transform-origin: 423px 272px; }
+.mascot-antenna { transform-origin: 300px 148px; }
+.mascot-eyes, .mascot-spark, .mascot-shadow { transform-box: fill-box; transform-origin: center; }
+@keyframes mascot-hop {
+  0%, 100% { transform: translate(-5px, 0) rotate(-3deg) scale(1.02, .98); }
+  25% { transform: translate(0, -24px) rotate(2deg) scale(.98, 1.02); }
+  50% { transform: translate(6px, 0) rotate(3deg) scale(1.02, .98); }
+  75% { transform: translate(0, -21px) rotate(-2deg) scale(.98, 1.02); }
+}
+@keyframes mascot-wave-right {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(17deg); }
+}
+@keyframes mascot-wave-left {
+  0%, 100% { transform: rotate(8deg); }
+  50% { transform: rotate(-15deg); }
+}
+@keyframes mascot-wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(6deg); }
+}
+@keyframes mascot-blink {
+  0%, 38%, 44%, 78%, 84%, 100% { transform: scaleY(1); }
+  41%, 81% { transform: scaleY(.08); }
+}
+@keyframes mascot-twinkle {
+  0%, 100% { transform: scale(.85) rotate(-10deg); }
+  50% { transform: scale(1.15) rotate(12deg); }
+}
+@keyframes mascot-shadow-pulse {
+  0%, 50%, 100% { transform: scaleX(1); opacity: .12; }
+  25%, 75% { transform: scaleX(.78); opacity: .07; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mascot-bounce { animation: mascot-hop 1.2s ease-in-out infinite; }
+  .mascot-arm-right { animation: mascot-wave-right .48s ease-in-out infinite; }
+  .mascot-arm-left { animation: mascot-wave-left .6s ease-in-out infinite; }
+  .mascot-antenna { animation: mascot-wiggle .6s ease-in-out infinite; }
+  .mascot-eyes { animation: mascot-blink 3.4s linear infinite; }
+  .mascot-spark { animation: mascot-twinkle 1.2s ease-in-out infinite; }
+  .mascot-spark--second { animation-delay: -.6s; }
+  .mascot-shadow { animation: mascot-shadow-pulse 1.2s ease-in-out infinite; }
+}
